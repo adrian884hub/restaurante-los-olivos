@@ -1,88 +1,232 @@
 <!DOCTYPE html>
-<html>
-<head><link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Restaurante Los Olivos </title>
-     <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Los Olivos | Restaurante de montaña en Mendoza</title>
+  <meta name="description" content="Cocina mendocina entre viñedos y la cordillera de los Andes. Reservá tu mesa por WhatsApp.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,700;1,500&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <nav>
-        <h2>Los Olivos </h2>
-        <ul>
-            <li>Inicio</li>
-            <li>Menú</li>
-            <li>Contacto</li>
+  <!-- NAVEGACIÓN -->
+  <header class="nav" id="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="logo">Los Olivos</a>
+      <button class="nav__toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav__links" id="navLinks">
+        <a href="#experiencia">Experiencia</a>
+        <a href="#menu">Menú</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#contacto">Contacto</a>
+        <a href="#reservar" class="btn btn--small">Reservar</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PORTADA CON FOTOS DE MENDOZA -->
+  <section class="hero" id="inicio">
+    <div class="hero__slides" aria-hidden="true">
+      <div class="hero__slide is-active" style="background-image: url('images/hero-vinedos-atardecer.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('images/hero-aconcagua.jpg')"></div>
+      <div class="hero__slide" style="background-image: url('images/hero-vinedos-cordillera.jpg')"></div>
+    </div>
+    <div class="hero__overlay"></div>
+
+    <div class="container hero__content">
+      <p class="eyebrow">Luján de Cuyo · Mendoza</p>
+      <h1>Cocina de la tierra,<br><em>al pie de los Andes</em></h1>
+      <p class="hero__sub">Platos de estación, carnes a las brasas y vinos de nuestra región, servidos entre viñedos con vista a la cordillera.</p>
+      <div class="hero__actions">
+        <a href="#reservar" class="btn">Reservar mesa</a>
+        <a href="#menu" class="btn btn--ghost">Ver el menú</a>
+      </div>
+    </div>
+
+    <div class="hero__dots" id="heroDots"></div>
+  </section>
+
+  <!-- EXPERIENCIA -->
+  <section class="section" id="experiencia">
+    <div class="container">
+      <p class="eyebrow eyebrow--dark">La experiencia</p>
+      <h2 class="section__title">Mucho más que una comida</h2>
+      <div class="features">
+        <article class="feature">
+          <span class="feature__num">01</span>
+          <h3>Vinos de la casa</h3>
+          <p>Malbec, Cabernet Franc y blends de bodegas vecinas, con maridaje sugerido para cada plato.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__num">02</span>
+          <h3>Fuego y leña</h3>
+          <p>Carnes y vegetales cocinados lentamente sobre brasas de sarmiento, como se hace en Mendoza.</p>
+        </article>
+        <article class="feature">
+          <span class="feature__num">03</span>
+          <h3>Vista a la cordillera</h3>
+          <p>Galería al aire libre entre los viñedos, ideal para almorzar al sol o ver el atardecer.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENÚ -->
+  <section class="section section--cream" id="menu">
+    <div class="container">
+      <p class="eyebrow eyebrow--dark">Nuestra carta</p>
+      <h2 class="section__title">Menú</h2>
+
+      <div class="tabs" role="tablist">
+        <button class="tab is-active" data-tab="entradas" role="tab">Entradas</button>
+        <button class="tab" data-tab="principales" role="tab">Principales</button>
+        <button class="tab" data-tab="postres" role="tab">Postres</button>
+        <button class="tab" data-tab="vinos" role="tab">Vinos</button>
+      </div>
+
+      <div class="menu is-active" id="entradas">
+        <div class="dish"><div class="dish__head"><h3>Empanadas mendocinas</h3><span class="dots"></span><span class="price">$9.500</span></div><p>Tres unidades, carne cortada a cuchillo, al horno de barro.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Tabla de la finca</h3><span class="dots"></span><span class="price">$18.000</span></div><p>Quesos de cabra, jamón crudo, aceitunas y pan de campo.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Provoleta a la parrilla</h3><span class="dots"></span><span class="price">$11.000</span></div><p>Con orégano, ají molido y tomates asados.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Ensalada de estación</h3><span class="dots"></span><span class="price">$10.500</span></div><p>Hojas verdes, peras, nueces y aceite de oliva de Maipú.</p></div>
+      </div>
+
+      <div class="menu" id="principales">
+        <div class="dish"><div class="dish__head"><h3>Ojo de bife</h3><span class="dots"></span><span class="price">$29.000</span></div><p>400 g a las brasas, papas rústicas y chimichurri de la casa.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Chivito al asador</h3><span class="dots"></span><span class="price">$31.000</span></div><p>Cocción lenta de 6 horas, con verduras de la huerta.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Trucha de Potrerillos</h3><span class="dots"></span><span class="price">$26.500</span></div><p>A la manteca negra, almendras y puré de calabaza.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Risotto de hongos</h3><span class="dots"></span><span class="price">$22.000</span></div><p>Hongos de pino, parmesano y un toque de Malbec.</p></div>
+      </div>
+
+      <div class="menu" id="postres">
+        <div class="dish"><div class="dish__head"><h3>Peras al Malbec</h3><span class="dots"></span><span class="price">$8.500</span></div><p>Con helado de crema y canela.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Flan casero</h3><span class="dots"></span><span class="price">$7.500</span></div><p>Con dulce de leche y crema.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Volcán de chocolate</h3><span class="dots"></span><span class="price">$9.000</span></div><p>Centro fundido y frutos rojos.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Tabla de quesos y dulces</h3><span class="dots"></span><span class="price">$10.000</span></div><p>Dulce de membrillo y de batata, quesos regionales.</p></div>
+      </div>
+
+      <div class="menu" id="vinos">
+        <div class="dish"><div class="dish__head"><h3>Malbec reserva</h3><span class="dots"></span><span class="price">$24.000</span></div><p>Luján de Cuyo. Botella de 750 ml.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Cabernet Franc</h3><span class="dots"></span><span class="price">$27.000</span></div><p>Valle de Uco. Botella de 750 ml.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Torrontés</h3><span class="dots"></span><span class="price">$19.000</span></div><p>Blanco fresco y aromático. Botella de 750 ml.</p></div>
+        <div class="dish"><div class="dish__head"><h3>Copa del día</h3><span class="dots"></span><span class="price">$6.500</span></div><p>Preguntá por la selección del sommelier.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- NOSOTROS -->
+  <section class="section" id="nosotros">
+    <div class="container about">
+      <div class="about__img" style="background-image: url('images/nosotros-vinedo.jpg')" role="img" aria-label="Viñedo con uvas Malbec y la cordillera de fondo"></div>
+      <div class="about__text">
+        <p class="eyebrow eyebrow--dark">Nuestra historia</p>
+        <h2 class="section__title">Sabores auténticos de Mendoza</h2>
+        <p>En Los Olivos nos inspiramos en la esencia de Mendoza: tierra de viñedos, montañas y tradición gastronómica. Trabajamos con productores de la zona y elegimos cada ingrediente según la estación.</p>
+        <p>Queremos que cada visita se disfrute por la comida, pero también por el paisaje, el ambiente y la calidez que nos representa.</p>
+        <div class="stats">
+          <div><strong>15</strong><span>años en la zona</span></div>
+          <div><strong>4,9★</strong><span>en Google</span></div>
+          <div><strong>+80</strong><span>etiquetas de vino</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESEÑAS -->
+  <section class="section section--dark">
+    <div class="container">
+      <p class="eyebrow">Lo que dicen</p>
+      <h2 class="section__title section__title--light">Opiniones de clientes</h2>
+      <div class="reviews">
+        <blockquote class="review">
+          <p>“El chivito es increíble y la vista a la cordillera al atardecer no tiene precio. Volvemos seguro.”</p>
+          <cite>María G. · Buenos Aires</cite>
+        </blockquote>
+        <blockquote class="review">
+          <p>“Muy buena atención, nos recomendaron un Cabernet Franc que combinaba perfecto con el ojo de bife.”</p>
+          <cite>Lucas P. · Godoy Cruz</cite>
+        </blockquote>
+        <blockquote class="review">
+          <p>“Ideal para un almuerzo después de recorrer bodegas. Las empanadas, de las mejores que probé.”</p>
+          <cite>Sofía R. · Córdoba</cite>
+        </blockquote>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESERVAS -->
+  <section class="section section--cream" id="reservar">
+    <div class="container reserve">
+      <div class="reserve__text">
+        <p class="eyebrow eyebrow--dark">Reservas</p>
+        <h2 class="section__title">Reservá tu mesa</h2>
+        <p>Completá el formulario y te confirmamos por WhatsApp en minutos. Para grupos de más de 10 personas, escribinos directamente.</p>
+      </div>
+
+      <form class="form" id="reserveForm" novalidate>
+        <div class="form__row">
+          <label>Nombre
+            <input type="text" name="nombre" placeholder="Tu nombre" required>
+          </label>
+          <label>Teléfono
+            <input type="tel" name="telefono" placeholder="261 555 0000" required>
+          </label>
+        </div>
+        <div class="form__row">
+          <label>Fecha
+            <input type="date" name="fecha" required>
+          </label>
+          <label>Horario
+            <select name="horario" required>
+              <option value="">Elegí un horario</option>
+              <option>12:30</option><option>13:30</option><option>14:30</option>
+              <option>20:30</option><option>21:30</option><option>22:30</option>
+            </select>
+          </label>
+        </div>
+        <label>Personas
+          <input type="number" name="personas" min="1" max="10" value="2" required>
+        </label>
+        <p class="form__error" id="formError" role="alert"></p>
+        <button type="submit" class="btn btn--block">Enviar reserva por WhatsApp</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section class="section" id="contacto">
+    <div class="container contact">
+      <div>
+        <p class="eyebrow eyebrow--dark">Contacto</p>
+        <h2 class="section__title">Visitanos</h2>
+        <ul class="contact__list">
+          <li><strong>Dirección</strong>Ruta Provincial 15, km 28 · Luján de Cuyo, Mendoza</li>
+          <li><strong>Horario</strong>Martes a domingo · 12:00 a 16:00 y 20:00 a 00:00</li>
+          <li><strong>WhatsApp</strong><a href="https://wa.me/5492610000000" target="_blank" rel="noopener">+54 9 261 000-0000</a></li>
         </ul>
-    </nav>
-
-    <header>
-    <div class="overlay"></div>
-
-    <h1>Restaurante Los Olivos </h1>
-    <p class="frase">LA MEJOR COMIDA DE MENDOZA</p>
-    <button onclick="mostrarMensaje()">Reservar ahora</button>
-</header>
-
-    <section>
-     <h2>Menú</h2>
-
-<div class="menu">
-
-    <div class="categoria">
-        <h3>🍔 Hamburguesas</h3>
-        <p>Clásica</p>
-        <p>Doble cheddar</p>
-        <p>Especial Delicia</p>
+        <a href="https://www.google.com/maps/search/?api=1&query=Lujan+de+Cuyo+Mendoza" class="btn" target="_blank" rel="noopener">Cómo llegar</a>
+      </div>
+      <div class="contact__img" style="background-image: url('images/contacto-potrerillos.jpg')" role="img" aria-label="Embalse de Potrerillos, Mendoza"></div>
     </div>
+  </section>
 
-    <div class="categoria">
-        <h3>🍕 Pizzas</h3>
-        <p>Muzzarella</p>
-        <p>Napolitana</p>
-        <p>Especial</p>
+  <footer class="footer">
+    <div class="container footer__inner">
+      <span class="logo">Los Olivos</span>
+      <p>Página de muestra · Diseño y desarrollo web por <a href="https://github.com/adrian884hub" target="_blank" rel="noopener">Adrián</a></p>
+      <p class="footer__credits">Fotos: Wikimedia Commons (PP2025, Mauricio V. Genta, David, Juan Pelizzatti) · <a href="https://github.com/adrian884hub/restaurante-los-olivos#créditos-de-las-fotos" target="_blank" rel="noopener">ver licencias</a></p>
     </div>
+  </footer>
 
-    <div class="categoria">
-        <h3>🥗 Ensaladas</h3>
-        <p>Mixta</p>
-        <p>César</p>
-    </div>
+  <a href="https://wa.me/5492610000000?text=Hola%2C%20quiero%20hacer%20una%20reserva" class="wa-float" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor" aria-hidden="true"><path d="M17.5 14.4c-.3-.1-1.7-.8-2-.9-.3-.1-.5-.1-.7.1-.2.3-.8.9-.9 1.1-.2.2-.3.2-.6.1-.3-.1-1.2-.5-2.3-1.4-.9-.8-1.4-1.7-1.6-2-.2-.3 0-.5.1-.6l.4-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6c-.2 0-.5.1-.8.4-.3.3-1 1-1 2.5s1.1 2.9 1.2 3.1c.1.2 2.1 3.2 5.1 4.5.7.3 1.3.5 1.7.6.7.2 1.4.2 1.9.1.6-.1 1.7-.7 2-1.4.2-.7.2-1.2.2-1.4-.1-.1-.3-.2-.6-.3zM12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2z"/></svg>
+  </a>
 
-    <div class="categoria">
-        <h3>🍷 Bebidas</h3>
-        <p>Vinos mendocinos</p>
-        <p>Gaseosas</p>
-        <p>Agua</p>
-    </div>
-
-</div> 
-    </section>
-
-   
-    <section class="sobre">
-    <h2>Sobre nosotros</h2>
-
-    <p><strong>Sabores auténticos de Mendoza</strong></p>
-
-    <p>
-        En Restaurante Los Olivos nos inspiramos en la esencia de Mendoza, tierra de viñedos, montañas y tradición gastronómica.
-    </p>
-
-    <p>
-        Trabajamos con ingredientes frescos y de calidad para ofrecer una experiencia única en cada plato.
-    </p>
-
-    <p>
-        Nuestro objetivo es que cada cliente disfrute no solo la comida, sino también el ambiente y la calidez que nos representa.
-    </p>
-</section>
-
-    <section>
-        <h2>Contacto</h2>
-        <p>WhatsApp: 123456789</p>
-    </section>
-
-    <script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
