@@ -1,22 +1,22 @@
-# Casos de prueba
+# Test cases
 
-Pruebas manuales de la página de muestra "Restaurante Los Olivos".
-Navegadores usados: Chrome y Firefox (escritorio) y Chrome en Android (modo responsive de 375 px).
+Manual tests for the sample page "Restaurante Los Olivos".
+Browsers used: Chrome and Firefox (desktop) and Chrome on Android (375 px responsive mode).
 
-| ID | Funcionalidad | Pasos | Resultado esperado | Estado |
+| ID | Feature | Steps | Expected result | Status |
 |----|---------------|-------|--------------------|--------|
-| TC-01 | Carga de la página | Abrir la URL publicada | La página carga sin errores en la consola y se ve la portada con la primera foto | Aprobado |
-| TC-02 | Carrusel de portada | Esperar 6 segundos en la portada | La foto cambia con una transición suave y se marca el indicador correspondiente | Aprobado |
-| TC-03 | Indicadores del carrusel | Hacer clic en el segundo indicador | Se muestra la segunda foto y el contador de tiempo se reinicia | Aprobado |
-| TC-04 | Navegación | Hacer clic en "Menú", "Nosotros" y "Contacto" | La página se desplaza a cada sección sin que el encabezado tape el título | Aprobado |
-| TC-05 | Encabezado al hacer scroll | Bajar más de 40 px | El encabezado pasa de transparente a fondo blanco con texto oscuro | Aprobado |
-| TC-06 | Pestañas del menú | Hacer clic en "Principales", "Postres" y "Vinos" | Se muestra solo la categoría elegida y la pestaña queda resaltada | Aprobado |
-| TC-07 | Formulario vacío | Hacer clic en "Enviar reserva por WhatsApp" sin completar nada | Aparece el mensaje "Completá todos los campos..." y los campos vacíos se marcan en rojo | Aprobado |
-| TC-08 | Fecha pasada | Intentar elegir una fecha anterior a hoy | El calendario no permite seleccionarla | Aprobado |
-| TC-09 | Cantidad de personas fuera de rango | Escribir 0 o 15 en "Personas" y enviar | El campo se marca como inválido y no se envía | Aprobado |
-| TC-10 | Reserva válida | Completar todos los campos y enviar | Se abre WhatsApp con un mensaje que incluye nombre, teléfono, fecha (dd/mm/aaaa), horario y personas | Aprobado |
-| TC-11 | Corrección de error | Enviar vacío y luego escribir en un campo marcado | El borde rojo desaparece al escribir | Aprobado |
-| TC-12 | Botón flotante de WhatsApp | Hacer clic en el botón verde | Se abre WhatsApp en una pestaña nueva con un mensaje inicial | Aprobado |
-| TC-13 | Menú en celular | En 375 px, tocar el botón de tres líneas y luego un enlace | El menú se abre, el ícono se convierte en una X y el menú se cierra al elegir una opción | Aprobado |
-| TC-14 | Diseño en celular | Recorrer toda la página en 375 px | No hay desplazamiento horizontal y las columnas pasan a una sola | Aprobado |
-| TC-15 | Movimiento reducido | Activar "reducir movimiento" en el sistema operativo y recargar | Las animaciones se desactivan y todo el contenido es visible | Aprobado |
+| TC-01 | Page load | Open the published URL | The page loads with no console errors and the hero shows the first photo | Passed |
+| TC-02 | Hero carousel | Wait 6 seconds on the hero | The photo changes with a smooth transition and the matching indicator is highlighted | Passed |
+| TC-03 | Carousel indicators | Click the second indicator | The second photo is shown and the timer restarts | Passed |
+| TC-04 | Navigation | Click "Menú", "Nosotros" and "Contacto" | The page scrolls to each section without the header covering the title | Passed |
+| TC-05 | Header on scroll | Scroll down more than 40 px | The header changes from transparent to a white background with dark text | Passed |
+| TC-06 | Menu tabs | Click "Principales", "Postres" and "Vinos" | Only the selected category is shown and the tab stays highlighted | Passed |
+| TC-07 | Empty form | Click "Enviar reserva por WhatsApp" without filling anything in | The message "Completá todos los campos..." appears and empty fields are marked in red | Passed |
+| TC-08 | Past date | Try to pick a date before today | The date picker does not allow it | Passed |
+| TC-09 | Party size out of range | Enter 0 or 15 in "Personas" and submit | The field is marked as invalid and the form is not sent | Passed |
+| TC-10 | Valid reservation | Fill in every field and submit | WhatsApp opens with a message that includes name, phone, date (dd/mm/yyyy), time and party size | Passed |
+| TC-11 | Error correction | Submit empty, then type in a marked field | The red border disappears while typing | Passed |
+| TC-12 | Floating WhatsApp button | Click the green button | WhatsApp opens in a new tab with a starter message | Passed |
+| TC-13 | Mobile menu | At 375 px, tap the three-line button and then a link | The menu opens, the icon turns into an X and the menu closes after choosing an option | Passed |
+| TC-14 | Mobile layout | Scroll through the whole page at 375 px | There is no horizontal scrolling and columns collapse into one | Passed |
+| TC-15 | Reduced motion | Turn on "reduce motion" in the operating system and reload | Animations are disabled and all content is visible | Passed |

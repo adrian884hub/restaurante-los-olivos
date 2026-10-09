@@ -1,50 +1,50 @@
 # Restaurante Los Olivos
 
-Página web de muestra para un restaurante de Mendoza, Argentina. El restaurante es ficticio: el proyecto muestra cómo puede verse la página de un negocio gastronómico real.
+Sample website for a restaurant in Mendoza, Argentina. The restaurant is fictional: the project shows what a real restaurant's website can look like. The page content is in Spanish, for local customers.
 
-**Ver la página:** https://adrian884hub.github.io/restaurante-los-olivos/
+**View the page:** https://adrian884hub.github.io/restaurante-los-olivos/
 
-## Qué incluye
+## What it includes
 
-- Portada a pantalla completa con un carrusel de fotos de Mendoza: viñedos, el Aconcagua y la cordillera
-- Menú organizado en pestañas (entradas, principales, postres y vinos), con foto y precio de cada plato
-- Formulario de reserva con validación que envía los datos por WhatsApp
-- Sección de historia, opiniones de clientes, ubicación y horarios
-- Botón flotante de WhatsApp
-- Menú desplegable y diseño adaptado a celulares y tabletas
-- Animaciones suaves que se desactivan si el usuario lo pide en su sistema
+- Full-screen hero with a photo carousel of Mendoza: vineyards, Aconcagua and the Andes
+- Menu organized in tabs (starters, mains, desserts and wines), with a photo and price for each dish
+- Reservation form with validation that sends the details through WhatsApp
+- Story section, customer reviews, location and opening hours
+- Floating WhatsApp button
+- Drop-down menu and layout adapted to phones and tablets
+- Smooth animations that turn off when the user asks for reduced motion in their system
 
-## Tecnologías
+## Built with
 
-- HTML5 semántico
-- CSS3: Grid, Flexbox, variables y tipografía fluida con `clamp()`
-- JavaScript sin librerías
-- Publicado con GitHub Pages
+- Semantic HTML5
+- CSS3: Grid, Flexbox, custom properties and fluid typography with `clamp()`
+- Vanilla JavaScript, no libraries
+- Published with GitHub Pages
 
-## Pruebas (QA)
+## Testing (QA)
 
-La carpeta [`qa/`](qa/) contiene las pruebas manuales del proyecto:
+The [`qa/`](qa/) folder contains the project's manual tests:
 
-- [Casos de prueba](qa/test-cases.md): 15 casos para escritorio y celular
-- [Reporte de errores](qa/bug-reports.md): errores encontrados en la primera versión y cómo se corrigieron
+- [Test cases](qa/test-cases.md): 15 cases for desktop and mobile
+- [Bug reports](qa/bug-reports.md): bugs found in the first version and how they were fixed
 
-## Estructura
+## Structure
 
 ```
-index.html        Página principal
-style.css         Estilos
-script.js         Carrusel, menú, pestañas y formulario
-images/           Fotos optimizadas para web
-qa/               Casos de prueba y reporte de errores
+index.html        Main page
+style.css         Styles
+script.js         Carousel, menu, tabs and form
+images/           Web-optimized photos
+qa/               Test cases and bug reports
 ```
 
-## Créditos de las fotos
+## Photo credits
 
-### Fotos de fondo
+### Background photos
 
-Provienen de Wikimedia Commons. Fueron redimensionadas y, en un caso, recortadas.
+From Wikimedia Commons. They were resized and, in one case, cropped.
 
-| Archivo | Autor | Licencia | Fuente |
+| File | Author | License | Source |
 |---------|-------|----------|--------|
 | hero-vinedos-atardecer.jpg | PP2025 | CC0 | [Los Pioneros Vineyard 2](https://commons.wikimedia.org/wiki/File:Los_Pioneros_Vineyard_2.jpg) |
 | hero-aconcagua.jpg | Mauricio V. Genta | CC BY-SA 4.0 | [Aconcagua (Mendoza) 2022-11 (1)](https://commons.wikimedia.org/wiki/File:Aconcagua_(Mendoza)_2022-11_(1).jpg) |
@@ -52,11 +52,11 @@ Provienen de Wikimedia Commons. Fueron redimensionadas y, en un caso, recortadas
 | nosotros-vinedo.jpg | Juan Pelizzatti | CC BY 3.0 | [Bodega Chakana, viñedo](https://commons.wikimedia.org/wiki/File:Bodega_chakana_vi%C3%B1edo_camino.jpg) |
 | contacto-potrerillos.jpg | Mauricio V. Genta | CC BY-SA 4.0 | [Embalse Potrerillos (Mendoza) 2022-11 (01)](https://commons.wikimedia.org/wiki/File:Embalse_Potrerillos_(Mendoza)_2022-11_(01).jpg) |
 
-### Fotos del menú
+### Menu photos
 
-Provienen de [Pexels](https://www.pexels.com) y se usan bajo la [licencia de Pexels](https://www.pexels.com/license/). Fueron recortadas en cuadrado y redimensionadas. Son fotos de referencia para la muestra, no de los platos reales del restaurante.
+From [Pexels](https://www.pexels.com), used under the [Pexels license](https://www.pexels.com/license/). They were cropped to a square and resized. They are reference photos for the sample, not the restaurant's actual dishes.
 
-| Archivo (images/menu/) | Autor | Fuente |
+| File (images/menu/) | Author | Source |
 |---------|-------|--------|
 | empanadas.jpg | Tamba Budiarsana | [Pexels](https://www.pexels.com/photo/traditional-indonesian-pastel-snack-with-chilies-37106474/) |
 | tabla.jpg | Ali Dashti | [Pexels](https://www.pexels.com/photo/tray-of-various-appetizers-24206934/) |
@@ -75,6 +75,6 @@ Provienen de [Pexels](https://www.pexels.com) y se usan bajo la [licencia de Pex
 | torrontes.jpg | Brett Jordan | [Pexels](https://www.pexels.com/photo/elegant-presentation-of-white-wine-bottle-and-glass-34926023/) |
 | copa-del-dia.jpg | Burak Eroglu | [Pexels](https://www.pexels.com/photo/fine-dining-experience-with-wine-in-bodrum-35495067/) |
 
-## Autor
+## Author
 
-Diseño y desarrollo web por [Adrián](https://github.com/adrian884hub). Hago páginas web y presencia digital para negocios.
+Web design and development by [Adrián](https://github.com/adrian884hub). I build websites and digital presence for businesses.
